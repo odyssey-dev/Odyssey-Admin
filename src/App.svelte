@@ -81,7 +81,7 @@
 									</div>
 								</div>
 								<div class="card-file-thumb tx-primary">
-									<img src="/assets/badge.svg" width="60px">
+									<img src="assets/badge.svg" width="60px">
 								</div>
 								<div class="card-body">
 									<h6><a href="" class="link-02">{badge.name}</a></h6>
