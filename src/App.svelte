@@ -10,6 +10,7 @@
 			<a id="mainMenuClose" href=""><i data-feather="x"></i></a>
 		</div>
 	</div>
+	{#if userState == true }
 	<div class="navbar-right">
 		<div class="dropdown dropdown-profile">
 			<a href="#" class="dropdown-link" data-toggle="dropdown" data-display="static">
@@ -23,6 +24,7 @@
 			</div>
 		</div>
 	</div>
+	{/if}
 </header>
 
 
@@ -48,7 +50,7 @@
 				</div>
 			</div>
 		</div>
-
+	
 		<div class="filemgr-content">
 			<div class="filemgr-content-header">
 				<i data-feather="search"></i>
