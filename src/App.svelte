@@ -17,7 +17,7 @@
 			</a>
 			<div class="dropdown-menu dropdown-menu-right tx-13">
 
-				<h6 class="tx-semibold mg-b-5"> Walker</h6>
+				<h6 class="tx-semibold mg-b-5"> {username}</h6>
 				<p class="mg-b-25 tx-12 tx-color-03">Administrator</p>
 				<div class="dropdown-item" on:click={logout} ><i data-feather="log-out"></i>Sign Out</div>
 			</div>
@@ -340,9 +340,10 @@ function logout() {
 }
 
 	var userState;
-
+	var username;
 	auth.onAuthStateChanged(user => {
 		if (user){
+			username = user.email;
 			userState = true;
 		} else {
 			userState = false;
